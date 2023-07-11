@@ -228,7 +228,7 @@ img {
 .footer .footer-cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 8rem;
 }
 
 .footer li {
@@ -344,6 +344,7 @@ img {
 
   .footer .footer-cols {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
   }
 
   .btn-xl {
