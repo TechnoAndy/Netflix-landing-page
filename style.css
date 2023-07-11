@@ -91,7 +91,7 @@ img {
 
 .showcase-content h1 {
   font-weight: 700;
-  font-size: 5.2rem;
+  font-size: 4rem;
   line-height: 1.1;
   margin: 0 0 2rem;
 }
@@ -100,7 +100,7 @@ img {
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   line-height: 1.25;
   margin: 0 0 2rem;
 }
@@ -293,8 +293,8 @@ img {
 }
 
 .btn-xl {
-  font-size: 2rem;
-  padding: 1.5rem 2.1rem;
+  font-size: 1.5rem;
+  padding: 1.1rem 1.3rem;
   text-transform: uppercase;
 }
 
@@ -302,6 +302,10 @@ img {
   font-size: 1rem;
   padding: 0.8rem 1.3rem;
   text-transform: uppercase;
+}
+
+.btn-icon {
+  margin-left: 1rem;
 }
 
 @media(max-width: 960px) {
@@ -313,6 +317,16 @@ img {
     display: none;
   }
 
+  #tab-1-content .tab-1-content-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+  }
+
   .showcase-top img {
     top: 30%;
     left: 5%;
@@ -320,12 +334,12 @@ img {
   }
 
   .showcase-content h1 {
-    font-size: 3.7rem;
+    font-size: 2.8rem;
     line-height: 1;
   }
 
   .showcase-content p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .footer .footer-cols {
@@ -333,15 +347,20 @@ img {
   }
 
   .btn-xl {
-    font-size: 1.5rem;
-    padding: 1.4rem 2rem;
+    font-size: 1.3rem;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .btn-lg {
+    font-size: 0.7rem;
+    padding: 1rem 0.8rem;
   }
 
   .text-xl {
     font-size: 1.5rem;
   }
   .text-lg {
-    font-size: 1.3rem;
+    font-size: .8rem;
   }
   .text-md {
     font-size: 1rem;
@@ -351,7 +370,7 @@ img {
 @media(max-width: 700px) {
 
   .showcase::after{
-    box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+    box-shadow: inset 60px 60px 250px #000000, inset -60px -60px 250px #000000;
   }
 
   #tab-1-content .tab-1-content-inner {
@@ -368,7 +387,31 @@ img {
     grid-template-columns: 1fr;
   }
 
-/*   .footer .footer-cols {
+  .footer .footer-cols {
     align-items: auto;
-  } */
+  }
+
+  .btn-xl {
+    font-size: 1rem;
+    padding: 1.2rem 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .btn-lg {
+    font-size: .8rem;
+    padding: 0.5rem 1.1rem;
+    text-transform: uppercase;
+  }
+
+  .showcase-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .showcase-content p {
+    font-size: 1.1rem;
+  }
+
+  .text-lg {
+    font-size: 0.9rem;
+  }
 }
