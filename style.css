@@ -199,6 +199,7 @@ img {
   color: #999;
   padding: 0.8rem 1.2rem;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .table tbody tr td:first-child {
@@ -266,6 +267,7 @@ img {
 
 .text-dark {
   color: #999;
+  font-size: 0.6rem;
 }
 
 /* Buttons */
@@ -342,9 +344,18 @@ img {
     font-size: 1.1rem;
   }
 
+  footer p {
+    text-align: center;
+  }
+
+  footer li {
+    text-align: center;
+  }
+
   .footer .footer-cols {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
+
   }
 
   .btn-xl {
