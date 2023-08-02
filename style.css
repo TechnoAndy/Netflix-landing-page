@@ -53,7 +53,7 @@ img {
   height: 100%;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+  box-shadow: inset 80px 60px 200px #000000, inset -80px -60px 200px #000000;
 }
 
 .showcase-top {
@@ -66,14 +66,14 @@ img {
   width: 170px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
 }
 
 .showcase-top a {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10%;
   transform: translate(-50%, -50%);
 }
 
