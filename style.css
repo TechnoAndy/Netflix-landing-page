@@ -34,12 +34,13 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 75%;
+  padding-top: 90px;
 }
 
 .showcase {
   width: 100%;
-  height: 94vh;
+  height: 95vh;
   position: relative;
   background: url(images/Netflix_background.jpg) no-repeat center center/cover;
 }
@@ -89,20 +90,51 @@ img {
   z-index: 2;
 }
 
-.showcase-content h1 {
-  font-weight: 700;
-  font-size: 4rem;
+h1 {
+  font-weight: 800;
+  font-size: 2.8rem;
   line-height: 1.1;
   margin: 0 0 2rem;
 }
 
-.showcase-content p {
-  text-transform: uppercase;
+.showcase-content .heading {
   color: #fff;
-  font-weight: 400;
-  font-size: 1.4rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   line-height: 1.25;
   margin: 0 0 2rem;
+}
+
+.showcase-content .paragraph {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
+
+.email-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-sign-up input {
+  width: 400px;
+  height: 58px;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+  outline: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacity set to 50% */
+}
+
+.email-sign-up ::placeholder {
+  color: #ffffffe0;
 }
 
 /* Tabs */
@@ -126,14 +158,19 @@ img {
   padding-top: 0.5rem;
 }
 
-.tabs .container > div {
+.tab-detail p {
+  font-size: 1.5rem;
+  width: 130%;
+}
+
+/* .tabs .container > div {
   padding: 1.5rem 0;
 }
 
 .tabs .container > div:hover {
   color: #fff;
   cursor: pointer;
-}
+} */
 
 .tab-border {
   border-bottom: var(--primary-color) 4px solid;
@@ -155,6 +192,16 @@ img {
 
 .show {
   display: block !important;
+}
+
+#tab-1-content {
+  border-top: 8px solid rgb(198, 198, 198);
+  width: 100%;
+  height: 85vh;
+}
+
+.tab-detail {
+  margin: 50px 150px;
 }
 
 #tab-1-content .tab-1-content-inner {
@@ -213,13 +260,19 @@ img {
 /* Footer */
 .footer {
   max-width: 75%;
-  margin: 1rem auto;
+  margin: 5rem 10rem;
   overflow: auto;
 }
 
-.footer, .footer a {
-  color: #999;
-  font-size: 0.9rem;
+.footer {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
 .footer p {
@@ -228,21 +281,40 @@ img {
 
 .footer .footer-cols {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 8rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rem;
 }
 
 .footer li {
   line-height: 1.9;
 }
 
+.end-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+}
+
+.language {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.2rem 0.2rem;
+  text-align: center;
+  font-weight: 500;
+  width: 60%;
+  gap: 0.5rem;
+}
+
+.country {
+  text-decoration: none;
+}
+
 /* Container */
 .container {
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
-  font-size: 0.6rem;
 }
 
 /* Text styles */
@@ -292,12 +364,16 @@ img {
 
 .btn-rounded {
   border-radius: 5px;
+  font-weight: 550;
+  padding: 0.6rem 1.1rem;
 }
 
 .btn-xl {
-  font-size: 1.5rem;
-  padding: 1.1rem 1.3rem;
-  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1.2rem 1.4rem;
+  border-radius: 8px;
+  height: 60px;
 }
 
 .btn-lg {
@@ -337,7 +413,6 @@ img {
 
   .showcase-content h1 {
     font-size: 2.8rem;
-    line-height: 1;
   }
 
   .showcase-content p {
@@ -355,7 +430,6 @@ img {
   .footer .footer-cols {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
-
   }
 
   .btn-xl {
@@ -405,7 +479,7 @@ img {
 
   .btn-xl {
     font-size: 1rem;
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.3rem;
     text-transform: uppercase;
   }
 
